@@ -1,0 +1,44 @@
+@import '../helpers/helpers';
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  color: $gray;
+  text-decoration: none;
+  transition: all $trans;
+
+  &:hover {
+    color: $orange;
+    text-decoration: underline;
+    transition: all $trans;
+  }
+}
+
+p {
+  font-size: $defsz;
+  line-height: 1.2;
+
+  &:first-of-type {
+    margin-top: 0;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.page-title {
+  text-align: center;
+}
+
+.text-center {
+  text-align: center;
+}

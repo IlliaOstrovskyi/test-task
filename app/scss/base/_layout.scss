@@ -1,0 +1,39 @@
+@import '../helpers/helpers';
+
+body,
+html {
+  height: 100%;
+}
+
+.container {
+  @include container;
+}
+
+.row {
+  @include row;
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+.flex-def {
+  @include flex-def;
+}
+
+.flex-center {
+  @include flex-center;
+}
+
+.content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@include m-min($lg) {
+  .content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
